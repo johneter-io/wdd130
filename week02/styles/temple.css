@@ -26,7 +26,6 @@ h1 {
     margin: 10px;
     text-align: center;
     color: #3e5353;
-
 }
 
 img {
@@ -43,7 +42,6 @@ h2 {
     border-bottom: 1px solid #3e5353;
     /* font-style: italic; */
     font-size: 1.1rem;
-
 }
 
 section {
@@ -68,5 +66,4 @@ footer {
     font-size: .9rem;
     background-color: #3e5353;
     padding: 2px;
-
 }
