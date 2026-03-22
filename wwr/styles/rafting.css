@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #fff;
-    --secondary-color: #488db4;
-    --accent1-color: #022f56;
-    --accent2-color: #dad7cd;
+    --primary-color: #108ab1;
+    --secondary-color: #0477b7;
+    --accent1-color: #0477b7;
+    --accent2-color: #fff;
     --heading-font: "Times New Roman", "Geargia", serif;
     --body-font: "Futura", "Montserrat", sans-serif;
 }
@@ -44,10 +44,6 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
 .hero {
     position: relative;
 }
@@ -72,4 +68,8 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
