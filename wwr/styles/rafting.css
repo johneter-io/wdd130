@@ -73,7 +73,6 @@ header {
     gap: 1px;
     text-align: center;
     align-items: center;
-
 }
 
 /* Navigation */
@@ -203,6 +202,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 12px;
     width: 100%;
 
 }
@@ -211,7 +211,6 @@ h1 {
     text-decoration: none;
     display: flex;
     gap: 5px;
-    margin: 30px;
 }
 
 .socialmedia img {
