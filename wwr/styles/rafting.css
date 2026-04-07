@@ -227,9 +227,10 @@ button:hover {
     align-items: center;
 }
 
-.promotion2 h3 {
+.promotion2 h2 {
     color: var(--primary-color);
     font-size: 1.7rem;
+    background-color: transparent;
 }
 
 .promotion2-content {
