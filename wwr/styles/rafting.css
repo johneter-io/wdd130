@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #22224d;
-    --secondary-color: #ff7a2a;
-    --accent1-color: #4a6ed1;
-    --accent2-color: #202e5c;
+    --primary-color: rgb(34, 34, 77);
+    --secondary-color: rgb(255, 122, 42);
+    --accent1-color: rgb(34, 34, 77);
+    --accent2-color: rgb(32, 46, 92);
     --heading-font: "Times New Roman", "Geargia", serif;
     --body-font: "Futura", "Montserrat", sans-serif;
 }
@@ -278,7 +278,7 @@ header {
 
 /* Section Adventure Awaits You */
 .promotion {
-    border: 1px solid #22224d21;
+    border: 1px solid var(--primary-color);
     padding: 16px;
 }
 
