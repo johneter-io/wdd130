@@ -1,8 +1,11 @@
 :root {
     --primary-color: rgb(34, 34, 77);
     --secondary-color: rgb(255, 122, 42);
-    --accent1-color: rgb(51, 51, 51);
+    --accent1-color: rgb(17, 32, 81);
     --accent2-color: rgb(32, 46, 92);
+    --white: rgb(255, 255, 255);
+    --white-soft: rgba(255, 255, 255, 0.8);
+    --shadow: rgba(0, 0, 0, 0.1);
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: "Futura", "Montserrat", sans-serif;
 }
@@ -36,7 +39,7 @@ nav {
 }
 
 .navhead a {
-    color: rgba(255, 255, 255, .8);
+    color: var(--white-soft);
     text-decoration: none;
     padding: .5rem 1.1rem;
     border: 1px solid var(--secondary-color);
@@ -53,7 +56,7 @@ nav {
     background-color: transparent;
     margin-top: 80px;
     color: var(--accent2-color);
-    font-family: var(--heading-font);
+    font-family: var(--body-font);
     font-size: 40px;
 }
 
@@ -86,12 +89,12 @@ iframe {
     height: 100%;
     min-height: 500px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px var(--shadow);
     border: none;
 }
 
 form {
-    background: white;
+    background: var(--white-soft);
     padding: 35px;
     border-radius: 8px;
 }
@@ -115,11 +118,11 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 12px 14px;
-    border: 2px solid #ddd;
+    border: 2px solid var(--accent1-color);
     border-radius: 6px;
     font-size: 0.95rem;
     font-family: inherit;
-    background: #f9f9f9;
+    background: var(--white-soft);
 }
 
 .select,
@@ -203,7 +206,7 @@ button {
     width: 100%;
     padding: 14px 20px;
     background: var(--accent2-color);
-    color: white;
+    color: var(--white);
     border: none;
     border-radius: 6px;
     font-size: 1rem;
@@ -225,7 +228,6 @@ button:hover {
     border: 1px solid var(--accent2-color);
     gap: 6px;
     align-items: center;
-    color: var(--primary-color);
 }
 
 .promotion2 h2 {
@@ -251,14 +253,12 @@ header {
     padding: 12px 24px;
     background-color: var(--primary-color);
     border-bottom: 3px solid var(--secondary-color);
-    color: white;
 }
 
 /*  Section History */
 .history {
-    border: 1px solid #22224d21;
+    border: 1px solid var(--accent1-color);
     padding: 16px;
-    color: var(--primary-color);
 }
 
 .history h2 {
@@ -308,7 +308,6 @@ body {
 header,
 main,
 footer {
-    /* width: 840px; */
     margin: 0 auto;
 }
 
@@ -354,10 +353,10 @@ nav a:hover {
     left: 5%;
     right: 5%;
     background-color: var(--primary-color);
-    opacity: 80%;
+    opacity: .8%;
     padding: .5%;
     margin: 0;
-    color: #fff;
+    color: var(--white);
 }
 
 h1 {
@@ -384,9 +383,8 @@ h1 {
     gap: 2rem;
     padding: 20px 0;
     align-items: center;
-    border: 1px solid #fff;
+    border: 1px solid var(--accent2-color);
     margin-top: 10px;
-    color: white;
     background-color: var(--primary-color);
 
 }
@@ -394,7 +392,7 @@ h1 {
 .credit p {
     justify-items: center;
     justify-content: flex-end;
-    color: #fff;
+    color: var(--white-soft);
 }
 
 .socialmedia {
