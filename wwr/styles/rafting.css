@@ -225,7 +225,7 @@ button:hover {
     border: 1px solid var(--accent2-color);
     gap: 6px;
     align-items: center;
-    color: white;
+    color: var(--primary-color);
 }
 
 .promotion2 h2 {
@@ -258,7 +258,7 @@ header {
 .history {
     border: 1px solid #22224d21;
     padding: 16px;
-    color: white;
+    color: var(--primary-color);
 }
 
 .history h2 {
@@ -386,6 +386,7 @@ h1 {
     align-items: center;
     border: 1px solid #fff;
     margin-top: 10px;
+    color: white;
     background-color: var(--primary-color);
 
 }
