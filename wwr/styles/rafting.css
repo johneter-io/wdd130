@@ -3,7 +3,7 @@
     --secondary-color: rgb(255, 122, 42);
     --accent1-color: rgb(34, 34, 77);
     --accent2-color: rgb(32, 46, 92);
-    --heading-font: "Times New Roman", "Geargia", serif;
+    --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: "Futura", "Montserrat", sans-serif;
 }
 
@@ -48,12 +48,12 @@ nav {
     border-right: 1px solid var(--secondary-color);
 }
 
-.while-water {
-    justify-content: center;
+.white-water {
+    text-align: center;
     background-color: transparent;
     margin-top: 80px;
     color: var(--accent2-color);
-    font: var(--body-font);
+    font-family: var(--body-font);
     font-size: 40px;
 }
 
@@ -65,7 +65,7 @@ nav {
     color: var(--accent2-color);
     font-weight: normal;
     margin-top: 70px;
-    font: var(--body-font);
+    font-family: var(--body-font);
     font-size: 1.25rem;
 }
 
@@ -107,7 +107,7 @@ label {
     font-weight: 600;
     color: var(--accent2-color);
     margin-bottom: 8px;
-    font: var(--body-font);
+    font-family: var(--body-font);
 }
 
 input[type="text"],
