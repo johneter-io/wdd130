@@ -30,11 +30,263 @@
     margin: 0 20px 0 20px;
 }
 
+.logo-link {
+    display: flex;
+    align-items: center;
+    font-family: cursive;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--secondary-color)
+}
+
 nav {
     display: flex;
     justify-items: center;
     border-right: none;
 
+}
+
+/* TRIPS page */
+.trips-page img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.trips-page {
+    position: relative;
+}
+
+.trips-page::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    opacity: 80%;
+    /* 60% black tint */
+
+}
+
+.trips-page h1,
+.trips-page p {
+    position: relative;
+    /* Very important for enabling the z-index */
+    z-index: 2;
+    /* A number greater than the veil */
+    color: white;
+    /* So they stand out clearly against the dark background */
+}
+
+.trips-page > p {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+}
+
+.trip-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    top: 45%;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    gap: 30px;
+
+}
+
+.trip-container .trip-program {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    box-shadow: 0 0 2px var(--secondary-color);
+}
+
+.trip-container h1 {
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1.3rem;
+    font-family: var(--body-font);
+
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+
+.trip-container p {
+    color: var(--white);
+    font-size: 1.3rem;
+    text-transform: bold;
+
+}
+
+.trip-container .paragraph {
+    color: var(--white);
+    font-size: 1rem;
+    text-transform: italic;
+
+}
+
+.trip-container span {
+    color: var(--secondary-color);
+    font-size: 1rem;
+
+}
+
+.trip-container img {
+    border-radius: 6px;
+
+}
+
+.btn-book {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Structure (Important for a link <a>) */
+    display: inline-flex;
+    /* Allows you to use flex to center the text */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    /* Dimensions and Style */
+    width: 150px;
+    padding: 12px 0;
+    /* Adds height to the button */
+    background-color: var(--accent2-color);
+    color: var(--white);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+
+    /* Aesthetics */
+    box-shadow: 0 4px 6px var(--primary-color);
+    /* Adding an offset to the shadow */
+    transition: background 0.3s, transform 0.2s;
+    /* Smooth animation */
+}
+
+.btn-book:hover {
+    color: var(--secondary-color);
+
+}
+
+/* section main-apge */
+.main-page > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.main-page {
+    position: relative;
+}
+
+.main-page > h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    background-color: transparent;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 3.5rem;
+}
+
+.main-page article {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    bottom: 32%;
+    left: 5%;
+    right: 5%;
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    color: var(--white);
+    border-radius: 6px;
+    gap: 1rem;
+}
+
+.main-page article h2 {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.image-main {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.image-main figure {
+    margin: 0;
+    /* Removes the browsers' default margins */
+    text-align: center;
+    /* Center the caption (figcaption) below the image */
+}
+
+.image-main img {
+    border-radius: 8px;
+    /* Optional: Rounds the corners slightly for styling */
+    display: block;
+    /* Prevents empty space below the image */
+    margin-bottom: 10px;
+    /* Space between the image and its caption */
+}
+
+.main-page .btn-book {
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translateX(-50%);
+
+    /* Structure (Important for a link <a>) */
+    display: inline-flex;
+    /* Allows you to use flex to center the text */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    /* Dimensions and Style */
+    width: 150px;
+    padding: 12px 0;
+    /* Adds height to the button */
+    background-color: var(--accent2-color);
+    color: var(--white);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+
+    /* Aesthetics */
+    box-shadow: 0 4px 6px var(--primary-color);
+    /* Adding an offset to the shadow */
+    transition: background 0.3s, transform 0.2s;
+    /* Smooth animation */
+}
+
+/* Hover effect (Visual feedback) */
+.main-page .btn-book:hover {
+    color: var(--secondary-color);
+    /* background-color: var(--secondary-color);
+    transform: translateX(-50%) scale(1.05); */
+    /* Enlarges slightly on hover */
 }
 
 .navhead a {
@@ -53,9 +305,9 @@ nav {
 .white-water {
     text-align: center;
     background-color: transparent;
-    margin-top: 80px;
+    margin-top: 20px;
     color: var(--accent2-color);
-    font-family: var(--body-font);
+    font-family: var(--heading-font);
     font-size: 40px;
 }
 
@@ -238,10 +490,14 @@ button:hover {
 .promotion2-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    gap: 80px;
     text-align: center;
     align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.promotion2-content img {
+    border-radius: 6px;
 }
 
 header {
@@ -329,38 +585,23 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
-.hero {
-    position: relative;
+.logo-link:hover {
+    color: var(--white);
 }
 
+/* hero block */
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
+.hero {
+    position: relative;
+}
+
 .hero h1 {
-    position: absolute;
-    margin-top: 80px;
-    left: 0;
-    width: 100%;
-    margin: 0;
-
-}
-
-.hero article {
-    position: absolute;
-    bottom: 10%;
-    left: 5%;
-    right: 5%;
-    background-color: var(--primary-color);
-    opacity: 0.8%;
-    padding: .5%;
-    margin: 0;
-    color: var(--white);
-}
-
-h1 {
+    /* About Us | The Golden Rafting */
     position: absolute;
     top: 20px;
     width: 100%;
@@ -370,11 +611,51 @@ h1 {
     background-color: var(--primary-color);
 }
 
+.hero article {
+    position: absolute;
+    bottom: 60%;
+    left: 5%;
+    right: 5%;
+    background-color: var(--secondary-color);
+    /* gold background like in the screenshot */
+    opacity: 0.8;
+    /* Correct: without the %, 0.8 = 80% visible */
+    padding: 1.5rem;
+    color: var(--white);
+    border-radius: 6px;
+    display: flex;
+    /* text and image side by side */
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero article img {
+    float: none;
+    /* Replace float with flexbox */
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+    /* prevents the image from shrinking */
+}
+
+.hero article img {
+    order: 2;
+    /* moves the image to the right */
+}
+
+.hero article p {
+    order: 1;
+    /* keeps the text aligned to the left */
+}
+
 .hero article img {
     float: right;
     width: 125px;
 }
 
+/* section footer */
 .credit {
     display: flex;
     flex-direction: row;
