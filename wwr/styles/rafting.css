@@ -533,6 +533,7 @@ header {
 .history-content img {
     width: 200px;
     height: auto;
+    border-radius: 6px;
 }
 
 /* Section Adventure Awaits You */
@@ -552,6 +553,10 @@ header {
     gap: 1px;
     text-align: center;
     align-items: center;
+}
+
+.promotion-content img {
+    border-radius: 6px;
 }
 
 /* Navigation */
