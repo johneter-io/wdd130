@@ -17,15 +17,14 @@
 }
 
 header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    /* Ensures that it appears above the rest of the content */
-    background-color: white;
-    /* Important: otherwise it will be transparent! */
-    box-shadow: 0 2px 5px var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 12px 24px;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 body {
@@ -325,17 +324,6 @@ article img {
     color: var(--secondary-color);
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 12px 24px;
-    color: var(--white);
-    background-color: var(--primary-color);
-    border-bottom: 3px solid var(--secondary-color);
-}
-
 header img {
     margin-left: 100px;
     width: 80px;
@@ -351,10 +339,6 @@ h1 {
 
 nav a:hover {
     color: var(--secondary-color);
-}
-
-.logo-link:hover {
-    color: var(--white);
 }
 
 /* section footer */
@@ -845,11 +829,6 @@ button:hover {
 
 /* Navigation */
 
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-}
-
 header,
 main,
 footer {
@@ -912,17 +891,7 @@ footer {
     /* Aligns the image to the right */
 }
 
-.hero article img {
-    order: 2;
-    /* moves the image to the right */
-}
-
 .hero article p {
     order: 1;
     /* keeps the text aligned to the left */
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
 }
