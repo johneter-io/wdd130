@@ -395,7 +395,7 @@ nav a:hover {
     position: absolute;
     line-height: 1.2;
     width: 80%;
-    top: 40%;
+    top: 60%;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0.8;
