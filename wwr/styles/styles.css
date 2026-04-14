@@ -288,10 +288,6 @@ article img {
     color: var(--secondary-color);
 }
 
-aside h2 {
-    border-radius: 6px;
-}
-
 header {
     display: flex;
     align-items: center;
