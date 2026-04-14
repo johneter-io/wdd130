@@ -16,10 +16,26 @@
     box-sizing: border-box;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensures that it appears above the rest of the content */
+    background-color: white;
+    /* Important: otherwise it will be transparent! */
+    box-shadow: 0 2px 5px var(--primary-color);
+}
+
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     line-height: 1.6;
+}
+
+p {
+    padding: 0;
 }
 
 .flex-container {
@@ -69,6 +85,98 @@ nav a:last-child {
     border-right: 1px solid var(--secondary-color);
 }
 
+/* ====== NEWSLETTER ====== */
+.newsletter {
+    padding: 4rem 2rem;
+}
+
+.newsletter-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.newsletter-copy h2 {
+    font-family: var(--heading-font);
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.75rem;
+}
+
+.newsletter-copy p {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.newsletter-form label {
+    font-size: 0.85rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+
+}
+
+.newsletter-form input {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 0.65rem 1rem;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+}
+
+.btn-submit:hover {
+    color: var(--secondary-color);
+
+}
+
+/* OFFERINGS | SERVICES */
+.offerings-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    position: relative;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.offerings-main h1 {
+    background-color: transparent;
+
+}
+
 /* --- Map container (grid) --- */
 .trip-container {
     display: grid;
@@ -79,26 +187,21 @@ nav a:last-child {
     /* Use absolute positioning if possible */
     z-index: 2;
     width: 90%;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 40px auto;
 }
 
 .trip-container .paragraph {
-    color: var(--white);
+    color: var(--primary-color);
     font-size: 1rem;
-    font-style: italic;
-}
 
-.trips-page img {
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
 .trips-page {
     position: relative;
     background-color: var(--primary-color);
     /* Safety margin */
+
 }
 
 .trips-page::after {
@@ -133,6 +236,8 @@ nav a:last-child {
     background-color: transparent;
     color: white;
     font-size: 2rem;
+    text-transform: uppercase;
+    top: 40%;
 }
 
 .trip-container .trip-program {
@@ -144,19 +249,26 @@ nav a:last-child {
     box-shadow: 0 0 2px var(--secondary-color);
 }
 
+figure h2 {
+    color: var(--primary-color);
+    background-color: transparent;
+    font-family: var(--body-font);
+    font-style: normal;
+    margin: 1%;
+}
+
 .trip-container h1 {
     background-color: transparent;
     color: var(--white);
     font-size: 1.3rem;
     font-family: var(--body-font);
-
     margin-top: 8px;
     margin-bottom: 8px;
 
 }
 
 .trip-container p {
-    color: var(--white);
+    color: var(--primary-color);
     font-size: 1.3rem;
     font-weight: bold;
 }
@@ -205,69 +317,124 @@ nav a:last-child {
 
 }
 
-/* section main-apge */
-/* main > img {
-    display: block;
-    width: 100%;
-    height: auto;
-} */
-
 main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-
+    position: relative;
+    max-width: 100%;
 }
 
 main img {
     width: 100%;
     /* Width: takes up the entire space of the parent */
     height: auto;
+    padding: 4px;
     /* Height: auto to maintain proportions */
     border: 1px solid var(--primary-color);
-    /* Border: use your blue variable */
-    padding: 5px;
-    /* Padding: space between the image and the border */
     box-shadow: 5px 5px 15px var(--shadow);
-    /* Drop shadow */
+}
+
+/* ====== HERO | index ====== */
+.hero-title {
+    position: absolute;
+    top: 1%;
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: 5vw;
+    background-color: transparent;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    line-height: 1.2;
+    text-shadow: 0 2px 12px var(--primary-color);
+    left: 2rem;
+    right: 2rem;
+}
+
+.hero-sub {
+    position: absolute;
+    top: 22.5%;
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: 5vw;
+    background-color: transparent;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    line-height: 1.2;
+    text-shadow: 0 2px 12px var(--primary-color);
+    left: 2rem;
+    right: 2rem;
+}
+
+.bttn-book {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 28.5%;
+    /* Structure (Important for a link <a>) */
+    display: inline-flex;
+    /* Allows you to use flex to center the text */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    /* Dimensions and Style */
+    width: 200px;
+    padding: 12px 0;
+    /* Adds height to the button */
+    background-color: var(--accent2-color);
+    color: var(--white);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+
+    /* Aesthetics */
+    box-shadow: 0 4px 6px var(--primary-color);
+    /* Adding an offset to the shadow */
+    transition: background 0.3s, transform 0.2s;
+    /* Smooth animation */
+
+}
+
+.bttn-book:hover {
+    color: var(--secondary-color);
 }
 
 aside {
     width: 30%;
-    /* Définit la largeur de l'encadré */
-    margin: 20px auto;
-    /* Marges pour l'espacement et le centrage */
+    margin: auto;
     border: 1px solid var(--accent2-color);
-    /* Bordure autour de l'aside */
     padding: 20px;
-    /* Espace interne pour que le texte ne touche pas les bords */
+    /* Internal spacing to prevent the text from touching the edges */
     background-color: var(--secondary-color);
-    /* Couleur de fond (Orange/Gold) */
     color: var(--white);
-    /* Couleur du texte à l'intérieur */
+    /* Text color inside */
 }
 
 aside img {
-    width: 200px;
+    display: flex;
+    justify-content: center;
+    width: 25;
     height: auto;
+    margin-bottom: 9px;
 }
 
-p {
-    padding: 0;
+.text-title {
+    background-color: transparent;
+    color: var(--primary-color);
+    font-size: 2rem;
+    line-height: 25px;
 }
 
 footer {
     margin-top: 50px;
-    /* Espace au-dessus du footer */
+    /* Space above the footer */
     border-top: 2px solid var(--secondary-color);
-    /* Ligne de séparation */
+    /* Separator line */
     text-align: center;
-    /* Centre tout le contenu (texte et icônes) */
+    /* Center all content (text and icons) */
     padding: 20px;
-    /* Optionnel, pour donner du souffle */
+    /* Optional, to add some breathing room */
 }
-
-/* --------------------------------------------------------------------------------------- */
 
 .main-page > h1 {
     position: absolute;
@@ -314,12 +481,10 @@ footer {
     margin: 0;
     /* Removes the browsers' default margins */
     text-align: center;
-    /* Center the caption (figcaption) below the image */
 }
 
 .image-main img {
-    border-radius: 8px;
-    /* Optional: Rounds the corners slightly for styling */
+    border-radius: 6px;
     display: block;
     /* Prevents empty space below the image */
     margin-bottom: 10px;
@@ -331,36 +496,11 @@ footer {
     left: 50%;
     bottom: 7%;
     transform: translateX(-50%);
-
-    /* Structure (Important for a link <a>) */
-    display: inline-flex;
-    /* Allows you to use flex to center the text */
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-
-    /* Dimensions and Style */
-    width: 150px;
-    padding: 12px 0;
-    /* Adds height to the button */
-    background-color: var(--accent2-color);
-    color: var(--white);
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: 600;
-
-    /* Aesthetics */
-    box-shadow: 0 4px 6px var(--primary-color);
-    /* Adding an offset to the shadow */
-    transition: background 0.3s, transform 0.2s;
-    /* Smooth animation */
 }
 
 /* Hover effect (Visual feedback) */
 .main-page .btn-book:hover {
     color: var(--secondary-color);
-    /* background-color: var(--secondary-color);
-    transform: translateX(-50%) scale(1.05); */
     /* Enlarges slightly on hover */
 }
 
@@ -381,7 +521,7 @@ footer {
     align-items: center;
     color: var(--accent2-color);
     font-weight: normal;
-    margin-top: 70px;
+    margin-top: 10px;
     font-family: var(--body-font);
     font-size: 1.25rem;
 }
@@ -403,9 +543,8 @@ for the form */
 .username,
 .select {
     display: grid;
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 110px 1fr;
     /* Fixed width to align the labels */
-    gap: 15px;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -447,7 +586,6 @@ textarea {
     border: 2px solid var(--accent1-color);
     border-radius: 6px;
     background-color: var(--white-soft);
-    /* Variable defined above */
 }
 
 .select,
@@ -616,26 +754,13 @@ header {
 .promotion-content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1px;
+    gap: 9px;
     text-align: center;
     align-items: center;
 }
 
 .promotion-content img {
     border-radius: 6px;
-}
-
-/* Navigation */
-
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-}
-
-header,
-main,
-footer {
-    margin: 0 auto;
 }
 
 header img {
@@ -661,12 +786,6 @@ nav a:hover {
 }
 
 /* hero block */
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 .hero {
     position: relative;
 }
@@ -690,8 +809,8 @@ nav a:hover {
     /* Adjusted because 60% often hides the top */
     left: 5%;
     right: 5%;
-    background-color: rgba(255, 122, 42, 0.85);
-    /* Using RGBA for transparency */
+    background-color: var(--secondary-color);
+    opacity: 80%;
     padding: 1.5rem;
     color: var(--white);
     border-radius: 6px;
@@ -712,21 +831,6 @@ nav a:hover {
     /* Aligns the image to the right */
 }
 
-.hero article img {
-    order: 2;
-    /* moves the image to the right */
-}
-
-.hero article p {
-    order: 1;
-    /* keeps the text aligned to the left */
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-}
-
 /* section footer */
 .credit {
     display: flex;
@@ -741,7 +845,6 @@ nav a:hover {
     margin-top: 10px;
     color: var(--white);
     background-color: var(--primary-color);
-
 }
 
 .credit p {
@@ -752,11 +855,22 @@ nav a:hover {
 
 .socialmedia {
     display: flex;
-    gap: 10px;
+    background-color: transparent;
+    gap: 12px;
+}
+
+.socialmedia a {
+    border: none;
+}
+
+.socialmedia a:last-child {
+    border: none;
 
 }
 
 .socialmedia img {
+    display: block;
     width: 20px;
     height: auto;
+
 }

@@ -8,7 +8,7 @@
     <meta name="description"
       content="Welcome to “The Golden Rafting World. This project serves as the final assignment for the WDD 130 course: Web Fundamentals.">
     <meta name="author" content="John Peter Joseph">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
@@ -19,53 +19,96 @@
                 The Golden Rafting
             </a>
             <nav class="navhead">
-                <a href="index.html">Home</a>
-                <a href="trips.html">Trips</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
+                <a href="#">Home</a>
+                <a href="wwr/">Rafting Website</a>
             </nav>
         </div>
     </header>
+
+
     <main>
         <div>
-            <h1 class="hero-title">Conquer the rivers, explore the Andes</h1>
-
+            <!-- HERO PAGE -->
+            <h1 class="hero-title">WDD 130</h1>
+            <h2 class="hero-sub">Conquer the Rivers,<br>
+                Explore the Andes</h2>
             <img src="images/main.page/main-rafting.jpg" alt="rafting adventure">
+            <!-- OUR TRIPS button -->
+            <a href="trips.html" class="bttn-book">DISCOVER OUR TRIPS</a>
 
+
+            <!-- NEWSLETTER -->
+            <section class="newsletter">
+                <div class="newsletter-inner">
+                    <div class="newsletter-copy">
+                        <h2>Stay up to date</h2>
+                        <p>Subscribe to our newsletter and be the first to know about new
+                            expeditions, seasonal
+                            offers, and river guides from the heart of Labarois.</p>
+                    </div>
+                    <form action="#" method="post" class="newsletter-form">
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname"
+                              placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com"
+                              required>
+                        </div>
+                        <button type="submit" class="btn-submit">Subscribe Now</button>
+                    </form>
+                </div>
+            </section>
+
+
+            <!-- ASIDE SECTION -->
             <aside>
                 <article>
-                    <h2 class="text-title">40 years of passion, a wealth of experience.</h2>
+                    <img src="images/main.page/main-rafting-1.jpg" alt="Well-being in Rafting">
                     <p>
-                        Four decades of mastering Peru’s rivers. At<b> The Golden Rafting</b>,
+                        Four decades of mastering Peru's rivers. At<b> The Golden Rafting</b>,
                         adrenaline
                         meets expertise. Our guides, among the most qualified in the
                         country,
                         take you into the heart of the wildest rivers using high-performance
                         equipment. <br>
-                        Don’t just choose a tour; choose 40 years of expertise for a unique
+                        Don't just choose a tour; choose 40 years of expertise for a unique
                         immersion in the Peruvian wilderness.
                     </p>
                 </article>
-                <!-- BOOK NOW button -->
-                <a href="contact.html" class="btn-book">Book Now</a>
+
             </aside>
         </div>
 
-        <div class="image-main">
-            <figure>
+        <div class="offerings-main">
+            <div class="offerings-1">
                 <img src="images/main.page/main-rafting-2.jpg" alt="The most fun rafting"
                   width="160">
-                <figcaption>Fun Rafting</figcaption>
-            </figure>
-            <figure>
+                <h1>Our Mission (Purpose)</h1>
+                <p>
+                    At The Golden Rafting, our mission is to turn every rafting trip into an
+                    unforgettable human
+                    adventure. We believe that the power of the river is the best way to reconnect
+                    with nature and
+                    strengthen team bonds.
+                </p>
+            </div>
+
+            <div class="services">
                 <img src="images/main.page/main-rafting-4.jpg" alt="The most fun rafting"
                   width="160">
-                <figcaption>Soul of the Wind</figcaption>
-            </figure>
-            <figure>
-                <img src="images/trips/trips-rafting-9.jpg" alt="The most fun rafting" width="160">
-                <figcaption>Call of the Sea</figcaption>
-            </figure>
+                <h1>Our Services (Offerings)</h1>
+                <p>
+                    We offer a full range of expeditions suited to all skill levels, from gentle
+                    currents for families
+                    to Class V rapids for experts seeking thrills. Every booking includes
+                    state-of-the-art safety
+                    equipment, transportation to launch sites, and guidance from passionate,
+                    certified guides.
+                </p>
+            </div>
         </div>
     </main>
 
@@ -73,7 +116,7 @@
         <div class="credit">
             <p>©️ 2026 | The Golden Rafting | John Peter Joseph</p>
 
-            <nav class="socialmedia">
+            <div class="socialmedia">
                 <a href="https://youtube.com">
                     <img src="images/social-media/youtube.png" alt="YouTube home">
                 </a>
@@ -83,7 +126,7 @@
                 <a href="https://facebook.com">
                     <img src="images/social-media/facebook.png" alt="Facebook home">
                 </a>
-            </nav>
+            </div>
         </div>
     </footer>
 </body>
