@@ -61,7 +61,42 @@
                                 <input type="email" id="email" name="email"
                                   placeholder="your@email.com" required>
                             </div>
-                            <button type="submit" class="btn-submit">Subscribe Now</button>
+
+                            <fieldset>
+                                <div class="select">
+                                    <label>Message purpose</label>
+                                    <div class="radio-group">
+                                        <div>
+                                            <input type="radio" name="purpose" id="general"
+                                              value="general">
+                                            <label for="general">General inquiry</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="purpose" id="reservation"
+                                              value="reservation">
+                                            <label for="reservation">Reservation Question</label>
+                                        </div>
+
+                                        <div>
+                                            <input type="radio" name="purpose" id="website"
+                                              value="website">
+                                            <label for="website">Website Suggestion</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comment">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" rows="4"></textarea>
+                                </div>
+
+                                <div class="box">
+                                    <label for="check">Please subscribe me to the monthly
+                                        newsletter</label>
+                                    <input type="checkbox" name="check" id="check">
+                                </div>
+                            </fieldset>
+                            <button type="submit" class="btn-submit">Stay Update</button>
                         </form>
                     </div>
                 </section>
