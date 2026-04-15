@@ -599,10 +599,7 @@ button:hover {
     justify-content: center;
     gap: 10px;
     width: 80%;
-}
 
-.promotion2-content img {
-    border-radius: 6px;
 }
 
 /*  Section History */
@@ -644,12 +641,12 @@ button:hover {
 .promotion-content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1px;
+    gap: 20px;
     text-align: center;
     align-items: center;
 }
 
-.promotion-content img {
+.promotion2-content img {
     border-radius: 6px;
 }
 
