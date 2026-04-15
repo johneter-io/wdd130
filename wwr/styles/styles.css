@@ -2,12 +2,10 @@
     --primary-color: rgb(34, 34, 77);
     --secondary-color: rgb(255, 122, 42);
     --accent1-color: rgb(17, 32, 81);
-    --accent2-color: rgb(32, 46, 92);
     --white: rgb(255, 255, 255);
     --white-soft: rgb(245, 245, 245);
-    --shadow: rgb(45, 49, 71);
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: "Futura", "Montserrat", sans-serif;
+    --heading-font: "Garamond", "Georgia", serif;
+    --body-font: "Montserrat", sans-serif;
 }
 
 * {
@@ -728,7 +726,7 @@ textarea {
 button {
     width: 100%;
     padding: 14px 20px;
-    background: var(--accent2-color);
+    background: var(--primary-color);
     color: var(--white);
     border: none;
     border-radius: 6px;
@@ -765,7 +763,8 @@ button:hover {
     text-align: center;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
+    width: 80%;
 }
 
 .promotion2-content img {
