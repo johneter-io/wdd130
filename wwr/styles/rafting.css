@@ -15,10 +15,10 @@
 }
 
 header {
-    position: sticky;
+    /* position: sticky;
     top: 0;
     z-index: 100;
-    background-color: var(--white);
+    background-color: var(--white); */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,6 +27,16 @@ header {
     color: var(--white);
     background-color: var(--primary-color);
     border-bottom: 3px solid var(--secondary-color);
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+header img {
+    margin-left: 100px;
+    width: 80px;
+    height: auto;
 }
 
 body {
@@ -42,7 +52,7 @@ p {
 }
 
 nav {
-    background-color: var(--accent2-color);
+    background-color: var(--primary-color);
     padding: 2px;
 
 }
@@ -435,21 +445,11 @@ textarea {
     color: var(--secondary-color);
 }
 
-header img {
-    margin-left: 100px;
-    width: 80px;
-    height: auto;
-}
-
 h1 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
     background-color: var(--accent2-color);
     text-align: center;
-}
-
-nav a:hover {
-    color: var(--secondary-color);
 }
 
 /* section footer */
@@ -539,6 +539,7 @@ nav a:hover {
 /* Removing the float that conflicts with flex */
 .hero article img {
     width: 200px;
+    float: right;
     height: 150px;
     object-fit: cover;
     border-radius: 6px;
